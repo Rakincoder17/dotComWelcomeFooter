@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.home-welcome-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'El Messiri';
+    background-color: rgba(244,244,231,255);
+}
+.home-welcome-content{
+    width: 100%;
+    height: 47vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.home-welcome-hr{
+    width: 80%;
+    position: relative;
+    left: 10%;
+    border:0.01em dashed rgb(211, 166, 43);
+
+
+}
+.home-welcome-aboutUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 90%;
+}
+.home-welcome-prayerTimes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 90%;
+}
+.home-welcome-table{
+    width: 80%;
+    text-align: left;
+
+}
+.home-welcome-table td{
+    border-bottom: 1px dashed rgb(211, 166, 43);
+}
+
+
+
+/* ********************************************* */
+
+
+
+.footer-container{
+    background :rgba(0,0,0,0.8) url("bg-footers.jpg");
+    background-blend-mode: darken;
+    background-size: cover;
+    width: 100%;
+    height: 37vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-content{
+    width: 50%;
+    display: flex;
+    justify-content:space-between;
+}
+.footer-logo img{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+}
+.footer-h2{
+    color: white;
+}
+.footer-links .footer-contacts{
+    position: relative;
+    top: 25%;
+    font-family: 'El Messiri';
+}
+.footer-ul{
+    font-size: 2vh;  
+}
+.footer-ul a{
+    text-decoration: none;
+    color: white;  
+    font-family: 'El Messiri';
+}
+.footer-ul a:hover{
+    color: rgb(211, 166, 43);
+}
+
+.fa-solid{
+    color: rgb(211, 166, 43);
+    margin: 1.3vh; 
+    
+}
+
+
+
+/* *************************************** */
+
+
+
+@media  (max-width:430px) {
+    .footer-container{
+        background-size: cover;
+        background-position:center ;
+        background-repeat: no-repeat;
+        height: fit-content;
+        width: 100%;
+        padding-top: 3vh;
+        padding-bottom: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-content{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+   .footer-logo img{
+    height: 15vh;
+   }
+    .footer-contacts{
+        position: relative;
+    }
+    .footer-links{
+        position: relative;
+        left: -15%;
+    }
+}
+
+
+@media (max-width:654px){
+    .home-welcome-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        text-align: center;
+
+    }
+    .home-welcome-aboutUs{
+        width: 85%;
+    }
+    .home-welcome-prayerTimes{
+        width: 85%;
+    }
+}
+
+@media (max-width:930px){
+    .footer-logo img{
+        height: 20vh;
+       }
+       .footer-container{
+        background-size: cover;
+        background-position:center ;
+        background-repeat: no-repeat;
+        height: fit-content;
+        width: 100%;
+        padding-top: 3vh;
+        padding-bottom: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+       }
+       .footer-content{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       }
+}
